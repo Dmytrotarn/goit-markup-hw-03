@@ -309,6 +309,7 @@ body {
 
 .team-card {
     padding: 24px 20px;
+    border: 1px solid #EEEEEE;
 }
 
 .portfolio-item:nth-child(3n) {
