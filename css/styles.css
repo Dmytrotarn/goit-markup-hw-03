@@ -51,9 +51,20 @@ body {
 
 .container {
     width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 0 15px;
     margin: 0 auto;
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 36px;
+    line-height: 1.16;
+    margin-bottom: 50px;
 }
 
 .site-nav .current {
@@ -99,9 +110,16 @@ body {
 }
 
 
+
+
 /* Navigation*/
 
 .navigations {
+    display: flex;
+    align-items: center;
+}
+
+.header-container {
     display: flex;
     align-items: center;
     padding-top: 24px;
@@ -109,8 +127,9 @@ body {
 }
 
 .header {
+    padding: 25px 0;
     background-color: var(--white-color);
-    outline: 1px solid #ECECEC;
+    border: 1px solid #ECECEC;
 }
 
 .site-nav {
@@ -152,17 +171,50 @@ body {
     color: var(--secondary-color);
 }
 
+/* footer*/
+
+
+
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #2F303A;
+
+}
+
+.footer-adress {
+    display: block;
+    margin-top: 20px;
+
+    font-style: normal;
+    line-height: 1.71;
+    color: var(--white-color);
+}
+
+.footer-item {
+    margin-top: 9px;
+}
+
+.contactlink-footer {
+    margin-top: 9px;
+    line-height: 1.71;
+    color: rgba(255, 255, 255, 0.6);
+
+}
+
 
 /* Hero */
 
 .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    text-align: center;
     background-color: #2F303A;
-    padding-top: 94px;
-    padding-bottom: 94px;
 }
 
+
 .hero-title {
-    text-align: center;
+    margin-bottom: 30px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -172,7 +224,6 @@ body {
 }
 
 .hero-button {
-    margin-top: 40px;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
@@ -188,10 +239,6 @@ body {
 
 /* features */
 
-.section-features {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
 
 .features-list {
     display: flex;
@@ -211,6 +258,7 @@ body {
 
 
 .features-title {
+    font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
 }
@@ -223,10 +271,7 @@ body {
 
 /* About */
 
-.section-about {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
+
 
 .about-list {
     display: flex;
@@ -242,10 +287,11 @@ body {
 
 /* Section Team */
 
-.section-team {
-    padding-top: 94px;
-    padding-bottom: 94px;
+.team {
+    background-color: #F5F4FA;
 }
+
+
 
 .team-list {
     display: flex;
@@ -253,6 +299,8 @@ body {
 
 .team-list .item {
     margin-right: 30px;
+    background-color: var(--white-color);
+    box-shadow: rgba(0, 0, 0, 0.2);
 
 }
 
@@ -260,20 +308,20 @@ body {
     margin: 0;
 }
 
-.section-title {
-    text-align: center;
-    font-size: 36px;
-    line-height: 1.16;
-    padding-bottom: 50px;
-}
+
 
 .team-card {
     padding-top: 30px;
     padding-bottom: 30px;
     max-width: 270px;
+    border: 1px solid #EEEEEE;
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+        0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+        0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+
 }
 
-.name-title {
+.team-name {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
@@ -292,10 +340,6 @@ body {
 /* Portfolio */
 
 
-.section-portfolio {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
 
 .portfolio-cards {
     display: flex;
@@ -307,19 +351,18 @@ body {
     margin-bottom: 30px;
 }
 
-.team-card {
-    padding: 24px 20px;
-    border: 1px solid #EEEEEE;
+.portfolio-item:nth-child(3n) {
+    margin-right: 0;
 }
 
-.portfolio-item:nth-child(3n) {
-    margin-bottom: 0px;
+.portfolio-item:nth-last-child(-n+3) {
+    margin-bottom: 0;
 }
 
 .list-buttons {
     display: flex;
     justify-content: center;
-    margin-bottom: 56px;
+    margin-bottom: 50px;
 }
 
 .list-buttons .item:nth-child(-n +4) {
@@ -364,32 +407,4 @@ body {
     clip: rect(0 0 0 0);
     clip-path: inset(50%);
     margin: -1px;
-}
-
-/* footer*/
-
-.fooner-container {
-    display: flex;
-    flex-direction: column;
-}
-
-
-
-.footer {
-    padding-top: 60px;
-    padding-bottom: 60px;
-    background-color: #2F303A;
-
-}
-
-.footer-adress {
-    font-style: normal;
-    line-height: 1.71;
-    color: var(--white-color);
-}
-
-.contactlink-footer {
-    line-height: 1.71;
-    color: rgba(255, 255, 255, 0.6);
-
 }
